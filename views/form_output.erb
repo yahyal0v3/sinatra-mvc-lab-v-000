@@ -6,6 +6,6 @@
   </head>
   <body>
     <h1>You phrase in Pig Latin</h1>
-      <p><%= @phrase.to_pig_latin %></p>
+      <p><%= @phrase.to_pig_latin(params[:text].to_s) %></p>
   </body>
 </html>

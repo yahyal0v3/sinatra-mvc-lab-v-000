@@ -1,5 +1,5 @@
 class PigLatinizer
-  
+
   def piglatinize(word)
     if word.length <= 2
       first_letters = ""
