@@ -10,10 +10,10 @@ class PigLatinizer
     end
 
     if first_letters.downcase.scan(/[bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz]/) != []
-      word.gsub(/^first_letters/, "") + first_letters + "ay"
+      word.gsub(first_letters, "") + first_letters + "ay"
     elsif first_letters.downcase.scan(/[bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz]/) != []
       first_letters = word[0] + word[1]
-      word.gsub(/^first_letters/, "") + first_letters + "ay"
+      word.gsub(first_letters, "") + first_letters + "ay"
     elsif word[0].downcase.scan(/[aeoui]/) != []
       word + "way"
     else
