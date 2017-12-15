@@ -1,6 +1,5 @@
 class PigLatinizer
-  attr_accessor :string
-
+  
   def piglatinize(word)
     if word.length <= 2
       first_letters = ""
@@ -23,8 +22,8 @@ class PigLatinizer
     end
   end
 
-  def to_pig_latin
-    arrayed_phrase = self.string.split
+  def to_pig_latin(phrase)
+    arrayed_phrase = phrase.split
     piglatin_phrase = []
 
     arrayed_phrase.each do |word|
